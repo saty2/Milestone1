@@ -1,0 +1,32 @@
+27-January-2022 19:52:08---Student: you
+27-January-2022 19:52:08----Code compilesPASS
+Launch Suite:
+  27-January-2022 19:52:08----Process exits shell with correct return code:NOT OK
+  27-January-2022 19:52:09----Shell message is displayed:NOT OK
+Result:FAIL
+Unknown Command Message:
+  27-January-2022 19:52:09----Unknown command should display corresponding message:OK
+  27-January-2022 19:52:10----Multiple unknown commands:OK
+Result:PASS
+Long Command Message:
+  27-January-2022 19:52:10----Long command input is invalid:NOT OK
+  27-January-2022 19:52:11----Long command message takes priority:NOT OK
+Result:FAIL
+Echo Simple Messages:
+  27-January-2022 19:52:11----Echo of one character displays correctly:OK
+  27-January-2022 19:52:12----Echo of simple message displays correctly:OK
+  27-January-2022 19:52:12----Echo of simple message displays correctly:OK
+  27-January-2022 19:52:13----Echo of simple message does not show errors:OK
+Result:PASS
+Echo Special Characters:
+  27-January-2022 19:52:14----Echo of mixed message displays correctly:OK
+  27-January-2022 19:52:14----echo with quotes has no special meaning:OK
+  27-January-2022 19:52:15----echo ignores extra spaces:OK
+Result:PASS
+Multiple Commands:
+  27-January-2022 19:52:15----Two echo commands display correctly:OK
+  27-January-2022 19:52:16----Two echo commands do not show error:OK
+  27-January-2022 19:52:16----Echo commands work while other commands error:OK
+Result:PASS
+27-January-2022 19:52:16--- Suites Passed 5.0/7.0
+27-January-2022 19:52:16 FINISHED
