@@ -30,14 +30,14 @@ void display_error(char *pre_str, char *str) {
  * Return: number of bytes read
  */
 ssize_t get_input(char *in_ptr) {
-    int retval = read(STDIN_FILENO, in_ptr, MAX_STR_LEN+1); // Not a sanitizer issue since in_ptr is allocated as MAX_STR_LEN+1
+    int retval = read(STDIN_FILENO, in_ptr, MAX_STR_LEN + 1); // Not a sanitizer issue since in_ptr is allocated as MAX_STR_LEN+1
     int read_len = retval;
     if (retval == -1) {
         read_len = 0;
     }
     if (read_len > MAX_STR_LEN) {
         read_len = 0;
-        retval = -1;
+        retval = EOF;
         write(STDERR_FILENO, "ERROR: input line too long\n", strlen("ERROR: input line too long\n"));
         int junk = 0;
         while((junk = getchar()) != EOF && junk != '\n');
@@ -59,10 +59,9 @@ size_t tokenize_input(char *in_ptr, char **tokens) {
         // TODO: Fix this
         tokens[token_count] = curr_ptr;
         curr_ptr = strtok(NULL, DELIMITERS);
-        token_count += 1;
-        
-
+        token_count += 1;       
     }
+    
     tokens[token_count] = NULL;
     return token_count;
 }

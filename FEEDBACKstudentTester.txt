@@ -1,32 +1,60 @@
-27-January-2022 19:52:08---Student: you
-27-January-2022 19:52:08----Code compilesPASS
+07-March-2022 13:38:47---Student: you
+07-March-2022 13:38:47----Code compilesPASS
 Launch Suite:
-  27-January-2022 19:52:08----Process exits shell with correct return code:NOT OK
-  27-January-2022 19:52:09----Shell message is displayed:NOT OK
+  07-March-2022 13:38:47----Process exits shell with correct return code:NOT OK
+  07-March-2022 13:38:48----Shell message is displayed:NOT OK
 Result:FAIL
 Unknown Command Message:
-  27-January-2022 19:52:09----Unknown command should display corresponding message:OK
-  27-January-2022 19:52:10----Multiple unknown commands:OK
+  07-March-2022 13:38:48----Unknown command should display corresponding message:OK
+  07-March-2022 13:38:49----Multiple unknown commands:OK
 Result:PASS
 Long Command Message:
-  27-January-2022 19:52:10----Long command input is invalid:NOT OK
-  27-January-2022 19:52:11----Long command message takes priority:NOT OK
+  07-March-2022 13:38:49----Long command input is invalid:NOT OK
+  07-March-2022 13:38:50----Long command message takes priority:NOT OK
 Result:FAIL
 Echo Simple Messages:
-  27-January-2022 19:52:11----Echo of one character displays correctly:OK
-  27-January-2022 19:52:12----Echo of simple message displays correctly:OK
-  27-January-2022 19:52:12----Echo of simple message displays correctly:OK
-  27-January-2022 19:52:13----Echo of simple message does not show errors:OK
+  07-March-2022 13:38:51----Echo of one character displays correctly:OK
+  07-March-2022 13:38:51----Echo of simple message displays correctly:OK
+  07-March-2022 13:38:52----Echo of simple message displays correctly v3:OK
+  07-March-2022 13:38:52----Echo of simple message displays correctly v3:OK
+  07-March-2022 13:38:53----Echo of simple message does not show errors:OK
 Result:PASS
 Echo Special Characters:
-  27-January-2022 19:52:14----Echo of mixed message displays correctly:OK
-  27-January-2022 19:52:14----echo with quotes has no special meaning:OK
-  27-January-2022 19:52:15----echo ignores extra spaces:OK
+  07-March-2022 13:38:53----Echo of mixed message displays correctly:OK
+  07-March-2022 13:38:54----echo with quotes has no special meaning:OK
+  07-March-2022 13:38:54----echo ignores extra spaces:OK
 Result:PASS
 Multiple Commands:
-  27-January-2022 19:52:15----Two echo commands display correctly:OK
-  27-January-2022 19:52:16----Two echo commands do not show error:OK
-  27-January-2022 19:52:16----Echo commands work while other commands error:OK
+  07-March-2022 13:38:55----Two echo commands display correctly:OK
+  07-March-2022 13:38:55----Two echo commands do not show error:OK
+  07-March-2022 13:38:56----Echo commands work while other commands error:OK
 Result:PASS
-27-January-2022 19:52:16--- Suites Passed 5.0/7.0
-27-January-2022 19:52:16 FINISHED
+Simple variables accesses:
+  07-March-2022 13:38:56----Declare and access a single variable:NOT OK
+  07-March-2022 13:38:57----Declare and access a single variable:NOT OK
+Result:FAIL
+Variable integration with other commands:
+  07-March-2022 13:38:57----Declare a single variable:NOT OK
+  07-March-2022 13:38:58----Declare and access two variables:NOT OK
+Result:FAIL
+Custom variable accesses:
+  07-March-2022 13:38:58----Access variables in separate lines:NOT OK
+  07-March-2022 13:38:59----Access variables in separate lines v2:NOT OK
+Result:FAIL
+Echo without variables displays plain text:
+  07-March-2022 13:38:59----Variables access with $ is bound to name:NOT OK
+  07-March-2022 13:39:00----Non-existing variable displays as plain text:OK
+Result:FAIL
+Variable values can be redefined:
+  07-March-2022 13:39:00----Variable value is redefined appropriately:NOT OK
+  07-March-2022 13:39:01----Variable value is redefined appropriately v2:NOT OK
+Result:FAIL
+Variable formatting edge cases:
+  07-March-2022 13:39:01----Variables accesses separate by the first equal:NOT OK
+  07-March-2022 13:39:02----Variable declaration with spaces is not supported:OK
+Result:FAIL
+Advanced tests:
+  07-March-2022 13:39:02----Declare and access 100 variables:NOT OK
+Result:FAIL
+07-March-2022 13:39:06--- Suites Passed 5.0/14.0
+07-March-2022 13:39:06 FINISHED
